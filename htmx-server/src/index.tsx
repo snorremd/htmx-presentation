@@ -279,7 +279,9 @@ const app = new Elysia()
           const interval = setInterval(() => {
             if (notifications.length > 0) {
               controller.enqueue(
-                new TextEncoder().encode(`data: <li>${notifications.shift()}</li>\n\n`)
+                new TextEncoder().encode(
+                  `data: <li>${notifications.shift()}</li>\n\n`
+                )
               );
             }
           }, 5000);
