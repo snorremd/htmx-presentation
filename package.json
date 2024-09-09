@@ -11,7 +11,8 @@
     "build": "slidev build",
     "dev": "slidev --open",
     "export": "slidev export",
-    "preview": "bun run --target=bun http-server ./dist -p 3030"
+    "preview": "bun run --target=bun http-server ./dist -p 3030",
+    "prod": "bun run build && bun run preview"
   },
   "type": "module",
   "devDependencies": {
