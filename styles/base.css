@@ -1,0 +1,7 @@
+:root {
+  --slidev-code-font-size: 10px;
+}
+
+.slidev-code {
+    min-height: 100%;
+}

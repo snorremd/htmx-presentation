@@ -1,0 +1,27 @@
+{
+  "name": "htmx-server",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:server": "bun run --watch src/index.tsx",
+    "dev:css": "tailwindcss --watch -i src/index.css -o public/index.css",
+    "dev": "concurrently \"bun run dev:server\" \"bun run dev:css\""
+  },
+  "dependencies": {
+    "@elysiajs/html": "1.1.1",
+    "elysia": "1.1.12",
+    "elysia-htmx": "2.0.0",
+    "htmx-ext-sse": "^2.2.2",
+    "htmx.org": "2.0.2",
+    "@kitajs/html": "^4.1.0",
+    "@kitajs/ts-html-plugin": "4.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.12",
+    "bun-types": "latest",
+    "concurrently": "^8.2.2",
+    "daisyui": "4.10.1",
+    "tailwindcss": "^3.4.3"
+  },
+  "module": "src/index.js"
+}
